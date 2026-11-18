@@ -9,11 +9,11 @@
   <style>
     :root {
       color-scheme: light;
-      --ink: #183c34;
-      --green: #21624e;
-      --muted: #53665e;
-      --paper: #f6f7f2;
-      --line: #dce3d9;
+      --ink: #252a34;
+      --cobalt: #143dcc;
+      --muted: #5c6370;
+      --paper: #ffffff;
+      --line: #cdd1d8;
     }
     * { box-sizing: border-box; }
     body {
@@ -22,9 +22,9 @@
       color: var(--ink);
       font: 17px/1.65 system-ui, -apple-system, sans-serif;
     }
-    a { color: var(--green); text-underline-offset: 4px; }
+    a { color: var(--cobalt); text-underline-offset: 4px; }
     a:focus-visible {
-      outline: 3px solid #b46d24;
+      outline: 3px solid #143dcc;
       outline-offset: 5px;
     }
     .wrap { width: min(1080px, 90%); margin: auto; }
@@ -45,7 +45,7 @@
       letter-spacing: .16em;
       font-size: 12px;
       font-weight: 750;
-      color: var(--green);
+      color: var(--cobalt);
     }
     h1 {
       font-size: clamp(38px, 6.5vw, 70px);
@@ -62,7 +62,7 @@
       display: inline-block;
       padding: 12px 22px;
       margin-top: 14px;
-      background: var(--green);
+      background: var(--cobalt);
       color: white;
       text-decoration: none;
       border-radius: 6px;
@@ -107,7 +107,7 @@
       margin: 20px 0 60px;
       padding: 36px;
       border-radius: 12px;
-      background: #e7eee3;
+      background: #f0f2f5;
     }
     .contact h2 { margin: 0 0 12px; }
     .contact p { margin: 8px 0; }
@@ -126,11 +126,12 @@
       .intro { font-size: 18px; }
     }
   </style>
+<link rel="stylesheet" href="/assets/brand.css">
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">Eco Logic Ltd</div>
+      <a class="brand" href="/" aria-label="Eco Logic Ltd home"><span class="brand-mark"><img src="/assets/eco-logic-logo.png" alt="" width="1568" height="1003"></span><span>Eco Logic Ltd</span></a>
       <nav aria-label="Main navigation">
         <a href="#tools">Our tools</a>
         <a href="#about">About</a>
